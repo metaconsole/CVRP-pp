@@ -56,6 +56,7 @@ def GetMinDist(Arr):
 
 #returns the nearest, customer that is NOT yet visited
 #if two with same distance exist it takes the first
+#auskommentiert weil falsch, war erster draft
 '''
 def NearestCus(i):
     nex = 0
@@ -74,6 +75,7 @@ def NearestCus(i):
 '''
 DstTrueArr = np.array(DistArr)
 
+#gefunden über google, optimal für uns, nutzt numpy funktionen 
 def NN(A, start):
     """Nearest neighbor algorithm.
     A is an NxN array indicating distance between N locations
@@ -100,6 +102,7 @@ def NN(A, start):
 # Array of all Customers, 0 if unvisited 1 if visited        
 CusArr = [0 for x in range(NoCus+1)]
 
+#auskommentiert weils nicht funktioniert, war mein erster draft an Lösung
 '''
 # Building Starting Solution
 def BuildSol(DistArr):
@@ -144,20 +147,4 @@ plt.plot(30,40, "rs")
 plt.scatter(x,y)
 plt.plot(xsol, ysol, "r-")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
